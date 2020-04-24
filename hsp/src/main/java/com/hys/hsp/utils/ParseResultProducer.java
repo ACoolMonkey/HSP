@@ -2,7 +2,6 @@ package com.hys.hsp.utils;
 
 import com.hys.hsp.base.sqlinfo.AbstractSqlInfo;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;

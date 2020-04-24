@@ -3,7 +3,6 @@ package com.hys.hsp.utils;
 import com.hys.hsp.base.factory.parse.AbstractParseFactoryProducer;
 import com.hys.hsp.base.factory.sqlinfo.AbstractSqlInfoFactoryProducer;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
