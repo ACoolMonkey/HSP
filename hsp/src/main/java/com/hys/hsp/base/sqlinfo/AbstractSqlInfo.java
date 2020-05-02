@@ -13,7 +13,6 @@ import java.util.List;
  * @date 2018年5月18日
  */
 @Data
-@NoArgsConstructor
 public abstract class AbstractSqlInfo implements Cloneable {
 
     /**
