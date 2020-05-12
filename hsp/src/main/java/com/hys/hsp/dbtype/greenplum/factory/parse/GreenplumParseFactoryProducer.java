@@ -43,7 +43,7 @@ public class GreenplumParseFactoryProducer extends AbstractParseFactoryProducer 
                 parse = greenplumParseFactory.getTargetInstance();
                 break;
             default:
-                throw new IllegalStateException("不兼容的类型：" + type);
+                throw new UnsupportedOperationException("不兼容的类型：" + type);
         }
         return parse;
     }
