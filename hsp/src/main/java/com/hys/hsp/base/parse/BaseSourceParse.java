@@ -38,7 +38,7 @@ public abstract class BaseSourceParse implements AbstractParse {
             sql = truncWhere(sql);
             if (sql.startsWith("USING")) {
                 //如果是merge into语法
-                sourceSet = partParse(sourceSet, sql, defaultSchema, USING);
+                partParse(sourceSet, sql, defaultSchema, USING);
             } else if (sql.startsWith("LIKE")) {
                 sourceSet = db2PartParse(sql, defaultSchema);
             } else {
@@ -79,7 +79,7 @@ public abstract class BaseSourceParse implements AbstractParse {
                     multiFromSqlStringBuilder.delete(0, multiFromSqlStringBuilder.length());
                 }
                 //JOIN
-                sourceSet = partParse(sourceSet, sql, defaultSchema, JOIN);
+                partParse(sourceSet, sql, defaultSchema, JOIN);
             }
             returnList.add(new ArrayList<>(sourceSet));
         }
